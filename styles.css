@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: blue;
+    cursor: none;
+}
+
+#game-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#game-area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
