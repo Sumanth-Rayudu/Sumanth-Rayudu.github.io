@@ -1,29 +1,109 @@
-body {
+/* Resetting some default browser styles */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
     margin: 0;
-    overflow: hidden;
-    background-color: blue;
-    cursor: none;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#game-container {
-    width: 100%;
-    height: 100vh;
-    position: relative;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #161616; /* Dark text color */
+    background-color: #d3c3b9; /* Light background color */
 }
 
-#game-area {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    transition: background-color 0.2s ease;
+header {
+    background: #10232a; /* Dark blue background for header */
+    color: #d3c3b9; /* Light text color */
+    padding: 1rem;
 }
 
-.circle {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: blue;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #d3c3b9; /* Light text color for links */
+    text-decoration: none;
+}
+
+header .cta-button {
+    background: #b58863; /* Warm brown button color */
+    color: #161616; /* Dark text color for button */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+header .cta-button:hover {
+    background: #a79e9c; /* Slightly lighter brown for hover effect */
+}
+
+/* Section Styles */
+section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff; /* White background for sections */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    color: #161616; /* Dark text color for headings */
+}
+
+ul {
+    margin-bottom: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    color: #10232a; /* Dark blue text color for list items */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+    color: #3d4d55; /* Subtle dark grey color for labels */
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #a79e9c; /* Light brown border color */
+    border-radius: 5px;
+}
+
+form button {
+    background: #b58863; /* Warm brown button color */
+    color: #161616; /* Dark text color for button */
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #a79e9c; /* Slightly lighter brown for hover effect */
+}
+
+/* Footer Styles */
+footer {
+    background: #10232a; /* Dark blue background for footer */
+    color: #d3c3b9; /* Light text color */
+    text-align: center;
+    padding: 1rem;
 }
