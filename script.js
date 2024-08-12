@@ -1,21 +1,6 @@
-const gameArea = document.getElementById("game-area");
-
-gameArea.addEventListener("mousemove", (event) => {
-    const x = event.clientX;
-    const y = event.clientY;
-
-    gameArea.style.backgroundColor = "white";
-    drawCircle(x, y);
+// JavaScript to handle form submission
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for your message! I will get back to you soon.');
+    // You can add additional functionality here, like sending the form data to an email or server
 });
-
-function drawCircle(x, y) {
-    const circle = document.createElement("div");
-    circle.classList.add("circle");
-    circle.style.left = `${x}px`;
-    circle.style.top = `${y}px`;
-    gameArea.appendChild(circle);
-
-    setTimeout(() => {
-        gameArea.removeChild(circle);
-    }, 500);
-}
