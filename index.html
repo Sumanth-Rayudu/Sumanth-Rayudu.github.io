@@ -3,13 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumanth Rayudu - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Touch Game</title>
 </head>
 <body>
-    <div id="game-container">
-        <div id="game-area"></div>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="intro">
+            <h1>Sumanth Rayudu</h1>
+            <p>Certified Scrum Master & DevOps Enthusiast</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a Certified Scrum Master and a DevOps enthusiast with a passion for agile methodologies and cross-functional collaboration. I aim to advance my expertise in agile project management and contribute to efficient development and deployment processes.</p>
+        <h3>Certifications</h3>
+        <ul>
+            <li>Certified Scrum Master (CSM) - Scrum Alliance, Inc.</li>
+            <li>AWS Cloud Quest: Cloud Practitioner - Amazon Web Services</li>
+            <li>Azure AI Fundamentals - Microsoft</li>
+            <li>Introduction to Generative AI - Google Cloud</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>Technical Intern at SJC Tech Consulting</h3>
+        <p>Developed a product for horticulture farmers to monitor crops using Bluetooth and CAN Protocol. Designed an app for real-time analysis and correction.</p>
+        
+        <h3>Editor at THE ECE HERALD</h3>
+        <p>Led a team to optimize newsletter design and improve user engagement. Coordinated with Support, Design, and Marketing teams to align priorities.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <h3>Jenkins CI Pipeline Project</h3>
+        <p>Developed and maintained a Jenkins CI pipeline to automate build, test, and deployment processes using Maven, Docker, and Kubernetes.</p>
+
+        <h3>CI/CD Pipeline Management with AWS CodePipeline</h3>
+        <p>Designed and implemented a CI/CD pipeline using AWS CodePipeline. Managed automated testing and deployment with AWS services, ensuring stable deployments.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <h3>Bachelor of Technology (B.Tech.) in Electronics and Communication</h3>
+        <p>National Institute of Technology Andhra Pradesh, Tadepalligudem</p>
+        <p>CGPA: 7.28</p>
+
+        <h3>Intermediate</h3>
+        <p>Sri Chaitanya Junior College, ELURU</p>
+        <p>CGPA: 8.98</p>
+
+        <h3>High School</h3>
+        <p>Dr. K.K.R’s Gowtham School, ELURU</p>
+        <p>CGPA: 9.50</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Tools</h2>
+        <h3>Agile Frameworks</h3>
+        <p>Scrum, Kanban, Sprint Planning, Backlog Refinement, Velocity Tracking, Burn-Down Metrics</p>
+
+        <h3>Tools</h3>
+        <p>Jira, Terraform, Git, Jenkins, Docker, Kubernetes</p>
+
+        <h3>Programming and Scripting</h3>
+        <p>Python, Linux</p>
+
+        <h3>AWS Services</h3>
+        <p>EC2, S3, VPC, IAM, Cloud9, CodePipeline, CodeCommit, CodeBuild, CodeDeploy</p>
+    </section>
+
+    <section id="volunteer">
+        <h2>Volunteer Experience</h2>
+        <h3>Junior Cadet at NCC</h3>
+        <p>Received a certificate from NCC after completing training.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/sumanth-rayudu-939784160/" target="_blank">LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sumanth Rayudu</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
